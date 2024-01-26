@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+body {
+    background-color: #4b7683;
+    background-image: url("img\\background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.home {
+    margin: auto;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.startContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    margin: auto;
+    aspect-ratio: 4/3;
+    height: max(40vh, 100px);
+}
+
+.startContainer img {
+    width: 50%;
+}
+
+.startContainer h1 {
+    color: white;
+    font-family: 'Arbutus Slab';
+    font-size: max(2vw, 20px);
+}
+
+.startContainer button {
+    width: 80%;
+    aspect-ratio: 1/.2;
+    /* background: none; */
+    background-color: black;
+    border: none;
+    border-radius: 100vw;
+    font-family: 'Arbutus Slab';
+    color: white;
+    font-size: max(2vh, 20px);
+}

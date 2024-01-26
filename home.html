@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Barlow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Arbutus Slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>HOME</title>
+</head>
+
+<body>
+    <div class="sideMenuContainer" id="sideMenuContainer">
+        <div class="sideMenu" id="sideMenu">
+            <div class="escape">
+                <button onclick="sideMenuOnClick()"><img src="https://img.icons8.com/ios-glyphs/90/1A1A1A/multiply.png"
+                        alt="multiply" /></button>
+
+            </div>
+            <div class="profileContainer">
+                <div class="profile">
+                    <img src="img/profile.png" alt="profile">
+                </div>
+                <div class="profileInnerContainer">
+                    <div class="profileName">
+                        <p>Dan Victor C. Caseres</p>
+                    </div>
+                    <div class="profileEmail">
+                        <p>example@email.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menuContainer" id="sideMenuContainer">
+                <div class="menu">
+                    <ul>
+                        <a href="home.html">
+                            <li id="home">
+                                <img src="https://img.icons8.com/material-sharp/364/home.png" alt="home" />
+                                <p>HOME</p>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li id="ticket">
+                                <img src="https://img.icons8.com/carbon-copy/100/ticket.png" alt="ticket" />
+                                <p>My Tickets</p>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li id="winningNumbers">
+                                <img src="https://img.icons8.com/serif/64/experimental-trophy-serif.png"
+                                    alt="experimental-trophy-serif" />
+                                <p>Winning Numbers</p>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li id="winnerGallery">
+                                <img src="https://img.icons8.com/wired/512/1A1A1A/picture.png" alt="picture" />
+                                <p>Winners Gallery</p>
+                            </li>
+                        </a>
+                        <a href="how.html">
+                            <li id="how">
+                                <img src="https://img.icons8.com/ios/100/1A1A1A/light-on--v1.png" alt="light-on--v1" />
+                                <p>How To Use</p>
+                            </li>
+                        </a>
+                        <a href="setting.html">
+                            <li id="settings">
+                                <img src="https://img.icons8.com/tiny-glyph/64/1A1A1A/settings-3.png"
+                                    alt="settings-3" />
+                                <p>Settings</p>
+                            </li>
+                        </a>
+                        <a href="faq.html">
+                            <li id="faqs">
+                                <img src="https://img.icons8.com/ios-filled/100/1A1A1A/faq.png" alt="faq" />
+                                <p>FAQS</p>
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li id="about">
+                                <img src="https://img.icons8.com/material-outlined/384/1A1A1A/info--v1.png"
+                                    alt="info--v1" />
+                                <p>ABOUT</p>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li id="downloadApp">
+                                <img src="https://img.icons8.com/pastel-glyph/64/1A1A1A/download--v2.png"
+                                    alt="download--v2" />
+                                <p>Download App</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="sideMenuLogo">
+                    <img src="img\logo.png" alt="logo">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="main">
+        <header>
+            <div class="header">
+                <button onclick="sideMenuButtonOnClick()" class="sideMenuButton">☰</button>
+                <img src="img\logo.png" alt="logo">
+            </div>
+        </header>
+        <main>
+            <div class="home">
+                <div class="innerHomeContainer">
+                    <div class="innerStaticContainer">
+                        <div class="carouselBackground" id="carouselBackground">
+                            <div class="carousel" id="carousel">
+                                <div class="box1" id="box1">
+                                </div>
+                                <div class="box2" id="box2">
+                                </div>
+                                <div class="box3" id="box3">
+                                </div>
+                                <button onclick="carouselRight()" class="carouselButtonLeft"></button>
+                                <button onclick="carouselLeft()" class="carouselButtonRight"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="innerHomeContainer">
+                    <div class="innerStaticContainer">
+                        <h1>Possible Prizes</h1>
+                        <div class="carouselBackground" id="carouselBackground">
+                            <div class="carousel" id="carousel">
+                                <div class="box1" id="boxs1">
+                                </div>
+                                <div class="box2" id="boxs2">
+                                </div>
+                                <div class="box3" id="boxs3">
+                                </div>
+                                <button onclick="carouselRight2()" class="carouselButtonLeft"></button>
+                                <button onclick="carouselLeft2()" class="carouselButtonRight"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footerContainer">
+                <div class="footer">
+                    <a href="">
+                        <div class="innerFooter">
+                            <img src="img/promo.png" alt="promo">
+                            <p>Promo</p>
+                        </div>
+                    </a>
+                    <a href="home.html">
+                        <div class="innerFooter">
+                            <img src="img/home.png" alt="home">
+                            <p>HOME</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="innerFooter">
+                            <img src="img\profile.png" alt="profile">
+                            <p>Profile</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>

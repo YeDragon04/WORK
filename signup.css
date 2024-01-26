@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #4b7683;
+    background-image: url("img\\background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-top: 10vh;
+    scrollbar-width: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.home {
+    background-color: white;
+    border-radius: 2vw;
+    margin: auto;
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.startContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    margin: auto;
+    aspect-ratio: 4/3;
+    height: max(40vh, 100px);
+}
+
+.startContainer img {
+    width: 50%;
+}
+
+.startContainer h1 {
+    margin-top: 5vh;
+    color: black;
+    font-family: 'Arbutus Slab';
+    font-size: max(3vw, 40px);
+}
+
+.startContainer div {
+    border-radius: 100vw;
+    display: flex;
+    border:1px solid;
+    width: 80%;
+    aspect-ratio: 1/.2;
+}
+
+.startContainer label {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.startContainer img {
+    margin: auto;
+    height: 50%;
+
+}
+
+.startContainer input {
+    background: none;
+    border: none;
+    width: 80%;
+    aspect-ratio: 1/.2;
+    font-family: Barlow;
+    font-weight: bold;
+    color: black;
+    font-size: max(2vh, 20px);
+}
+
+.startContainer input:focus {
+    outline: none;
+}
+
+
+.startContainer button {
+    width: 80%;
+    aspect-ratio: 1/.2;
+    background: none;
+    background-color: black;
+    border: none;
+    border-radius: 100vw;
+    font-family: Barlow;
+    font-weight: bold;
+    color: white;
+    font-size: max(2vh, 20px);
+}
+
+#terms {
+    width: 5%;
+}
+
+.startContainer .terms {
+    align-items: center;
+    border-radius: 0;
+    gap: 1vh;
+    border: none;
+}
+
+.terms label {
+    width: 95%;
+    font-size: max(2.5vh, 5px);
+}
+
+
+.signUp {
+    margin: auto;
+    text-align: center;
+    margin-top: 5dvh;
+    color: white;
+    text-decoration: none;
+    font-family: "Arbutus Slab";
+}

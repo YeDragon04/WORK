@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+html {
+    /* background-color: #4b7683; */
+}
+
+body {
+    background-color: #4b7683;
+    background-image: url("img\\background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sideMenuContainer {
+    width: max(20vw, 200px);
+    position: absolute;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    transform: translate(-100%, 0%);
+    transition: transform .5s;
+    z-index: 10;
+    background-color: aqua;
+}
+
+.sideMenuContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.sideMenu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+    overflow-y: scroll;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    transform: none;
+    z-index: 10;
+}
+
+.sideMenu::-webkit-scrollbar {
+    display: none;
+}
+
+.escape button {
+    top: 2%;
+    right: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: none;
+    border: none;
+    width: max(2vw, 30px);
+}
+
+.escape img {
+    width: max(2vw, 30px);
+}
+
+.profileContainer {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #7CA2A1;
+    width: 100%;
+    aspect-ratio: 1/.5;
+    color: white;
+}
+
+.profile {
+    background: white;
+    border-radius: 100vh;
+    width: 30%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100%;
+}
+
+.profileName {
+    font-family: Barlow;
+    font-weight: bold;
+    font-size: max(1.5vw, 15px);
+}
+
+.profileEmail {
+    font-family: 'Arbutus Slab';
+    font-size: max(1vw, 10px);
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    height: 100%;
+}
+
+.menu {
+    margin-top: 1vh;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+}
+
+#settings {
+    background-color: gray;
+}
+
+.menu li {
+    color: black;
+    width: 100%;
+    aspect-ratio: 1/.1;
+    margin-top: .5vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu li:hover {
+    padding-left: 5%;
+}
+
+
+.menu img {
+    margin-left: 5%;
+    width: 15%;
+    aspect-ratio: 1;
+}
+
+.menu p {
+    margin-left: 1vh;
+    font-size: max(1.5vw, 15px);
+    line-height: 200%;
+    width: 70%;
+    font-family: Barlow;
+    font-weight: 500;
+}
+
+.sideMenuLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 40%;
+    bottom: 2%;
+}
+
+.sideMenuLogo img {
+    width: 20%;
+}
+
+.main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5dvh;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+    width: 90%;
+    height: max(5dvw, 50px);
+    justify-content: space-between;
+}
+
+.sideMenuButton {
+    background: none;
+    border: none;
+    height: 100%;
+    aspect-ratio: 1;
+    font-size: max(3dvw, 30px);
+    color: white;
+}
+
+.home {
+    margin: auto;
+    width: 80%;
+    height: max(120dvw, 600px);
+}
+
+.home h1 {
+    font-size: max(4vw, 30px);
+    font-family: 'Arbutus Slab' ;
+    color: white;
+}
+
+.footerContainer {
+    background-color: #7CA2A1;
+    width: 100%;
+    height: max(5dvw, 70px);
+    display: flex;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+}
+
+.innerFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8dvh;
+    height: 100%;
+}
+
+.innerFooter img {
+    width: 50%;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.innerFooter p {
+    color: black;
+    font-family: Barlow;
+    font-weight: 700;
+    font-size: max(1vw, 10px);
+}
+
+/* Add hover animation on footer */
